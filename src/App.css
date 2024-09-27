@@ -1,38 +1,303 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Navbar.css */
+.navbar {
   display: flex;
-  flex-direction: column;
+  justify-content: space-around;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+ 
+  padding: 1rem 2rem; /* Added left and right padding */
+}
+
+.nav-item {
+  color: black;
+  text-decoration: none;
+  margin: 0 25px;
+}
+
+.nav-item.bold {
+  font-weight: bold; 
+  font-size: larger;
+}
+
+
+
+.get-started-button {
+  background-color: blue; /* Blue color for the button */
+  color: white; /* Text color */
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px; /* Padding for the button */
+  cursor: pointer;
+  margin:  0 70px;
+}
+
+.get-started-button:hover {
+  background-color: darkblue; /* Darker blue on hover */
+}
+/* body-part */
+.main-head{
+  display: flex;
+  justify-content: space-around;
+}
+.left-main{
+  margin: 0 50px;
+  margin-top: 80px;
+}
+.left-main > h3{
+   color: red;
+   width: 206px;
+   height: 16px;
+   left: 4px;
+   gap: 0px;
+   opacity: 0px;
+   font: bold;
+}
+.left-main > p{
+  font-family: Gilroy;
+font-size: 15px;
+font-weight: 200;
+line-height: 32px;
+letter-spacing: -0.20000000298023224px;
+text-align: left;
+color: rgb(165, 163, 163);
+}
+.left-main > button{
+  background-color: blue; /* Blue color for the button */
+  color: white; /* Text color */
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px; /* Padding for the button */
+  cursor: pointer;
+  
+}
+.right-main > img{
+  
+  margin-top: 40px;
+  margin-left: 20px;
+}
+/* Services */
+
+.services-container {
+  text-align: center; 
+  padding: 2rem;
+  margin-top: 10px;
+}
+
+.services-heading {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: #F64B4B;
+}
+.sevices-h3{
+  font-family: Gilroy;
+font-size: 36px;
+font-weight: 700;
+line-height: 48px;
+letter-spacing: -1.2000000476837158px;
+text-align: center;
+
+}
+.services-paragrap{
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  color: rgb(229, 215, 215);
+  margin-top: 20px;
+}
+
+.services-cards {
+  display: flex;
+  justify-content: space-around; /* Space out the cards */
+  margin: 10px;
+  
+  
+}
+
+.service-card1 {
+  background-color: #68D585;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  width: 220px; 
+  height: 300px;
+  text-align: center; /* Center content within cards */
+  color: white;
+  
+}
+.service-card2 {
+  background-color: #473BF0;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  width: 220px; 
+  height: 300px;
+  text-align: center; /* Center content within cards */
+  color: white;
+  
+
+}
+.service-card3 {
+  background-color: #F64B4B;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  width: 220px; 
+  height: 300px;
+  text-align: center; /* Center content within cards */
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.service-image {
+  /* width: 100%;  */
+  height: auto; 
+  border-radius: 4px; 
+  margin-top: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.service-title {
+  margin: 1rem 0;
+  font-size: 1.5rem;
+  font-family: Gilroy;
 }
+
+.learn-more-link {
+  color: blue; /* Link color */
+  text-decoration: none; /* Remove underline */
+  color: white;
+  margin-bottom: 10px;
+}
+
+.learn-more-link:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+.services-testimonial{
+  margin-top: 120px;
+}
+.about-main{
+  text-align: center;
+}
+.about-main > img{
+  width: 700px;
+  height: 500px;
+}
+.about-facts > img{
+  position: relative;
+  text-align: center;
+  margin-top: 80px;
+  margin-left: 60px;
+ 
+}
+.choose-heading{
+   position: relative;
+   margin-top: 40px;
+  
+   padding-top: 30px;
+   font-family: Gilroy;
+   
+}
+.choose-heading > h6{
+  font-family: Gilroy;
+  font-weight: bold;
+  color: #F64B4B;
+  text-align: center;
+  margin-top: 50px;
+
+}
+.choose-heading > h2{
+  font-family: Gilroy;
+  text-align: center;
+  font-weight: bold;
+}
+.choose-heading > img{
+   margin-bottom: 20px;
+   width: 60px;
+}
+.choose-container{
+  background-color: #f3f9fa;
+  margin-bottom: 40px;
+}
+.choose-images{
+  display: grid; 
+  justify-items: center;
+  justify-content: center;
+  grid-template-columns: repeat(2, 1fr); 
+  grid-template-rows: repeat(2, 1fr);    
+  gap: 30px; 
+  margin-bottom: 50px;
+ 
+   
+}
+.choose-line{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+  padding-bottom: 50px;
+  padding-top: 10px;
+
+}
+.choose-title{
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 30px;
+  padding-bottom: 40px;
+
+}
+.choose-button > button{
+  background-color: blue; 
+  color: white; 
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px; 
+  cursor: pointer;
+  margin-top: 30px;
+}
+.choose-works{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer-info{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.footer-info > img{
+  margin-top: 40px;
+   
+}
+.footer-main{
+  display: flex;
+   justify-content: center;
+   align-items: center;
+  background-color: hsl(224, 34%, 13%) ;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 60px;
+  padding-right: 60px;
+  cursor: pointer;
+}
+.footer-container{
+  text-align: center;
+}
+.footer-last{
+  display: flex;
+   justify-content: center;
+   align-items: center;
+   cursor: pointer;
+}
+
+
+
+
+/* .footer-btn > button{
+  background-color: blue; 
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px; 
+  cursor: pointer;
+  margin-top: 30px;
+  
+} */
